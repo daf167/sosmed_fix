@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+
+    <!-- Skip Link (pindahkan ke dalam body) -->
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+  </head>
+  <body>
+    <!-- ✅ Skip to content link -->
+    <a href="#main-content" class="skip-link">Lewati ke konten utama</a>
+
+    <header role="banner">
+      <div class="main-header container">
+        <a class="brand-name" href="#/">APP</a>
+
+        <nav id="navigation-drawer" class="navigation-drawer" role="navigation" aria-label="Menu utama">
+          <ul id="nav-list" class="nav-list">
+            <li><a href="#/">Beranda</a></li>
+            <li><a href="#/about">Tentang</a></li>
+            <li><a href="#/add">Tambah Cerita</a></li>
+            <li id="login-link"><a href="#/login">Masuk</a></li>
+            <li id="logout-link" style="display: none;"><a href="#">Keluar</a></li>
+          </ul>
+        </nav>
+
+        <button id="drawer-button" class="drawer-button" aria-label="Tombol menu navigasi">☰</button>
+      </div>
+    </header>
+
+    <!-- ✅ Main content landmark -->
+    <main id="main-content" class="main-content" role="main"></main>
+  </body>
+</html>
